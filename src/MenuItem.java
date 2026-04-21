@@ -14,7 +14,7 @@ public class MenuItem implements MenuComponent {
     }
 
     @Override
-    public String display() {
-        return " - " + name + ": " + "₱" + String.valueOf(price); 
+    public void print() {
+        System.out.println("  - " + this.name + ": ₱" + String.format("%.2f", this.price));
     }
 }

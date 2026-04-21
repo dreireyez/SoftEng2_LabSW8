@@ -15,7 +15,7 @@ public class MenuCategory implements MenuComponent {
     public double getPrice() {
         double totalPrice = 0.0;
         for(MenuComponent item: menuComponents) {
-            totalPrice += item.getPrice;
+            totalPrice += item.getPrice();
         }
         return totalPrice;
     }
